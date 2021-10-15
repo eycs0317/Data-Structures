@@ -44,14 +44,14 @@ class BinarySearchTree {
     let current = this.root;
     while(true) {
       if(current.value === value) {
-
+        console.log('1')
         return true;
       }
       if(value > current.value) {
         if(current.right) {
           current = current.right
         } else {
-
+          console.log('2')
           return false;
         }
       } else {
@@ -65,7 +65,16 @@ class BinarySearchTree {
     }
   }
   remove(value) {
+    // if(!this.root) {
+    //   return false;
+    // }
+    // let current = this.root;
+    // let prev;
+    // while(current) {
+    //   if(current.value === value) {
 
+    //   }
+    // }
   }
 }
 
